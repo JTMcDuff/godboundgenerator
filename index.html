@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Godbound Generator</title>
+</head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="functions.js"></script>
+<body >
+		<h1>Godbound Generator</h1>
+		<div>
+			<button id="genCourt"> Generate Court </button>
+			<button> Reset </button>
+		</div>
+		<div id='results'>
+
+		</div>
+
+</body>
+
+<script type="text/javascript">
+	// jQuery to load once page loads
+	$(  //  Runs genCourt when clicked
+		$( "#genCourt" ).click( ()=> {
+			let court = genCourt();
+			renderResult(court);
+		})
+	);
+
+</script>
+</html>
