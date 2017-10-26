@@ -11,7 +11,10 @@ function genCourt() {
 	const crtType = genRand(6);
 
 	// Reference the appropriate objects for detailing the structure.
-	const court = [ `Court Power structure: ${courtStructure[crtStruct]}` ];
+	const court = [ `Court Type: ${ courtType[crtType] }`,
+		`Court Power structure: ${ courtStructure[crtStruct] }`
+	];
+
 
 	// Append to index.
 	renderResult(court);
