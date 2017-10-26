@@ -11,7 +11,7 @@ function genCourt() {
 	const crtType = genRand(6);
 
 	// Reference the appropriate objects for detailing the structure.
-	const court = [ courtStructure[crtStruct] ];
+	const court = [ `Court Power structure: ${courtStructure[crtStruct]}` ];
 
 	// Append to index.
 	renderResult(court);
@@ -22,6 +22,7 @@ function renderResult(result) {
 	//  Append a correctly numbered div to results, then increment resultNumber
 	$("#results").append("<div id=" + resultNumber + "></div>");
 
+	// Render each item into the new div.
 	result.forEach( (item)=> {
 		item = '<p>' + item + '</p>';
 		$(`#${resultNumber}`).append(item);
