@@ -21,15 +21,18 @@
 </body>
 
 <script type="text/javascript">
+	let resultNumber = 0;
 	// jQuery to load once page loads
-	$(document).ready( function() {  //  Runs genCourt when clicked
+	$(document).ready( function() {
+	    //  Runs genCourt when clicked
 		$( "#genCourt" ).click( ()=> {
-			let court = genCourt();
-			renderResult(court);
+			genCourt();
 		});
 
+		// Clears the results div when reset clicked.
 		$("#reset").click( ()=> {
 			$("#results").empty();
+			resultNumber = 0;
 		});
 	});
 

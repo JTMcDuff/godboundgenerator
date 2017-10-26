@@ -3,19 +3,30 @@ function genRand(num) {
 	    return Math.floor(Math.random() * (num)) + 1;
 }
 
-// Does all the work necessary to generate a court.  Returns an array that is rendered in order by renderResult.
+// Does all the work necessary to generate a court.
+// Fires renderResult to add it to the index.html.
 function genCourt() {
-	//First, generate the number for court structure
-	let crtStruct = genRand(6);
-	return [crtStruct];
+	// Generate the numbers for court structure and type
+	const crtStruct = genRand(6);
+	const crtType = genRand(6);
+
+	// Reference the appropriate objects for detailing the structure.
+	const court = [ courtStructure[crtStruct] ];
+
+	// Append to index.
+	renderResult(court);
 }
 
 // Accepts an array and renders its elements in order to the result div.
 function renderResult(result) {
-	console.log(result);
-	//iterate through result
+	//  Append a correctly numbered div to results, then increment resultNumber
+	$("#results").append("<div id=" + resultNumber + "></div>");
+
 	result.forEach( (item)=> {
 		item = '<p>' + item + '</p>';
-		$("#results").append(item);
+		$(`#${resultNumber}`).append(item);
 	});
+
+	// Increment resultNumber for future references.
+	resultNumber++;
 }
