@@ -9,7 +9,7 @@ Generates quick results from the various Godbound charts.  While currently this 
 
 ## TODO
 * Create data template for courts object.
-* Add selection box to choose court type or random.
+* 
 * Same as above for major actors.
 
 ## Court Generation Steps

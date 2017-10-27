@@ -12,13 +12,11 @@ function genCourt(type) {
 	
 	// If selector was random, generate random type, otherwise use the type.
 	type === 'rand' ?  crtType = genRand(5) : crtType = Number(type);
-	
 
 	// Reference the appropriate objects for detailing the structure.
 	const court = [ `Court Type: ${ courtType[crtType] }`,
 		`Court Power structure: ${ courtStructure[crtStruct] }`
 	];
-
 
 	// Append to index.
 	renderResult(court);
