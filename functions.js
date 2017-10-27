@@ -5,10 +5,14 @@ function genRand(num) {
 
 // Does all the work necessary to generate a court.
 // Fires renderResult to add it to the index.html.
-function genCourt() {
+function genCourt(type) {
 	// Generate the numbers for court structure and type
-	const crtStruct = genRand(6);
-	const crtType = genRand(6);
+	const crtStruct = genRand(6)
+	let crtType;
+	
+	// If selector was random, generate random type, otherwise use the type.
+	type === 'rand' ?  crtType = genRand(5) : crtType = Number(type);
+	
 
 	// Reference the appropriate objects for detailing the structure.
 	const court = [ `Court Type: ${ courtType[crtType] }`,
