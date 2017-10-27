@@ -12,6 +12,14 @@
 		<div class="header">
 			<h1>Godbound Generator</h1>
 			<button id="genCourt"> Generate Court </button>
+			<select class="courtSelector">
+				<option value="rand">Random</option>
+				<option value="1">Aristocratic</option>
+				<option value="2">Bureaucratic</option>
+				<option value="3">Business</option>
+				<option value="4">Community</option>
+				<option value="5">Criminal</option>
+			</select>
 			<button id="reset"> Reset </button>
 		</div>
 		<div id='results'>
@@ -26,7 +34,11 @@
 	$(document).ready( function() {
 	    //  Runs genCourt when clicked
 		$( "#genCourt" ).click( ()=> {
-			genCourt();
+			//  Get current type from courtSelector
+			const type =  $('.courtSelector').val();
+			// Fire genCourt, which will fire renderResults to add to page.
+			
+			genCourt(type);
 		});
 
 		// Clears the results div when reset clicked.
