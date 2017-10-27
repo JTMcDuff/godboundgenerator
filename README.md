@@ -8,9 +8,9 @@ Generates quick results from the various Godbound charts.  While currently this 
 
 
 ## TODO
-* Create data template for courts object.
 * 
-* Same as above for major actors.
+* 
+* 
 
 ## Court Generation Steps
 1.  Generate Organization Power Structure.
