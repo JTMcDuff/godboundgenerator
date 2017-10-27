@@ -8,13 +8,13 @@ Generates quick results from the various Godbound charts.  While currently this 
 
 
 ## TODO
-* 
-* 
-* 
+*  Add functionality for Major Actors.
+*  Add data for next court type
+*  Add functionality to generate power structures for Major Actors.
 
 ## Court Generation Steps
-1.  Generate Organization Power Structure.
-2.  Choose or Generate Court type.  Currently generating randomly; will add option to choose.
+1.  Generate Organization Power Structure.  -- Working
+2.  Choose or Generate Court type.  -- Working
 3.  Generate at least three major actors.  Right now force to three, eventually add options.
 4.  Generate a power structure for each major actor.
 5.  Pick at least one conflict.  Start with one, eventually make this selectable.
