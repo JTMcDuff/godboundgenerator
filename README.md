@@ -1,5 +1,5 @@
 # godboundgenerator
-Generates Godbound Stuff. Specifically generates quick results from the various Godbound charts.  While currently this focuses on courts, once that structure is built out it will expand to other functions such as ruins, etc.
+Generates quick results from the various Godbound charts.  While currently this focuses on courts, once that structure is built out it will expand to other functions such as ruins, etc.
 
 ## Tech Stack
 * HTML 5 / CSS
