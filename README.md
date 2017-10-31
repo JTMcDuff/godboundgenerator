@@ -9,7 +9,7 @@ Generates quick results from the various Godbound charts.  While currently this 
 
 ## TODO
 *  Add functionality for Major Actors.
-*  Add data for next court type
+*  Add data for Business courts.
 *  Add functionality to generate power structures for Major Actors.
 
 ## Court Generation Steps

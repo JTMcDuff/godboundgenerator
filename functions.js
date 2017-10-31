@@ -8,14 +8,18 @@ function genRand(num) {
 function genCourt(type) {
 	// Generate the numbers for court structure and type
 	const crtStruct = genRand(6)
-	let crtType;
+	let courtType;
 	
 	// If selector was random, generate random type, otherwise use the type.
-	type === 'rand' ?  crtType = genRand(5) : crtType = Number(type);
+	type === 'rand' ?  courtType = courtTypes[ genRand(5) ] : courtType = courtTypes [Number(type) ];
+
+    // Generates our major actors.
+	//const majorActors = genMajorActors(3);
 
 	// Reference the appropriate objects for detailing the structure.
-	const court = [ `Court Type: ${ courtType[crtType] }`,
-		`Court Power structure: ${ courtStructure[crtStruct] }`
+	const court = [ `Court Type: ${ courtType }`,
+		`Court Power structure: ${ courtStructure[crtStruct] }`,
+		`Court Status: ${ courts[ courtType ][ 'firstChart' ][ genRand(12) ] }`
 	];
 
 	// Append to index.

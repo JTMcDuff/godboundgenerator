@@ -14,7 +14,7 @@ const courtStructure = {
 
 // courtType is exclusively used to associate a random number with a court.
 // Court data is held in courts.
-const courtType = {
+const courtTypes = {
 	1: 'Aristocratic',
 	2: 'Bureaucratic',
 	3: 'Business',
@@ -24,19 +24,19 @@ const courtType = {
 
 const courts = {
 	'Aristocratic': {
-		'Moods': {
-			1: 'Beauty-loving, with exquisite art and architecture',
-			2: 'Bluff and familiar, with easy access to nobility',
-			3: 'Bracing for an expected clash or change of rulers',
-			4: 'Confused, with a welter of plots and counterplots',
-			5: 'Corrupt, where everything takes cash or favors to do',
-			6: 'Decadent, obsessed with exotic pleasures',
-			7: 'Decaying, hidebound by rules no longer understood',
-			8: 'Delusional, convinced of a false situation in the world',
-			9: 'Paranoid, with everyone suspected of treachery',
-			10: 'Rigidly formal with elaborately protocols enforced',
-			11: 'Vibrant with activity and bold ambition',
-			12: 'Xenophilic, eager for foreign fashions and visitors'
+		'firstChart': {
+			1: 'Mood: Beauty-loving, with exquisite art and architecture',
+			2: 'Mood: Bluff and familiar, with easy access to nobility',
+			3: 'Mood: Bracing for an expected clash or change of rulers',
+			4: 'Mood: Confused, with a welter of plots and counterplots',
+			5: 'Mood: Corrupt, where everything takes cash or favors to do',
+			6: 'Mood: Decadent, obsessed with exotic pleasures',
+			7: 'Mood: Decaying, hidebound by rules no longer understood',
+			8: 'Mood: Delusional, convinced of a false situation in the world',
+			9: 'Mood: Paranoid, with everyone suspected of treachery',
+			10: 'Mood: Rigidly formal with elaborately protocols enforced',
+			11: 'Mood: Vibrant with activity and bold ambition',
+			12: 'Mood: Xenophilic, eager for foreign fashions and visitors'
 		},
 		'Major Actor': {
 			1: 'Court Sorcerer',
@@ -123,11 +123,124 @@ const courts = {
 			12:'Vast mobs of devoted servants'
 		}
 	},
-	'Bureaucratic': {},
+	'Bureaucratic': {
+				'firstChart': {
+			1: 'The bureaucracy is admired for its probity and efficiency at its work',
+			2: 'The bureaucracy is aristocratic, a refuge for excess noble offspring.',
+			3: 'The bureaucracy is autocratic, the real power behind a puppet ruler.',
+			4: 'The bureaucracy is regarded contemptuously, as a pack of incompetent obstacles',
+			5: 'The bureaucracy is corrupt, willing to do anything for a little silver',
+			6: 'The bureaucracy is dangerous, where political losers tend to die young.',
+			7: 'The bureaucracy is hidebound, in opposition to all new things of any kind.',
+			8: 'The bureaucracy is irrelevant, with the real administration lying elsewhere',
+			9: 'The bureaucracy is novel, being new to the area or full of new methods.',
+			10: 'The bureaucracy is pious, largely an outgrowth of the local majority faith.',
+			11: 'The bureaucracy is reverenced, as cultured elite due honor and respect.',
+			12: 'The bureaucracy is self-interested, only concerned with its own power.'
+		},
+		'Major Actor': {
+			1: '"Retired” kingmaker',
+			2: 'Chief justice',
+			3: 'Chief spymaster',
+			4: 'Head of tax collection',
+			5: 'Head of the police',
+			6: 'Minister of Agriculture',
+			7: 'Minister of Foreign Affairs',
+			8: 'Minister of Internal Affairs',
+			9: 'Minister of Temples',
+			10:'Minister of Trade',
+			11:'Minister of War',
+			12:'Secretary of a great minister'
+		},
+		'Minor Actor': {
+			1: 'Ambitious young clerk',
+			2: 'An official’s favorite lover',
+			3: 'Clerk who spies for a rival official',
+			4: 'Crony capitalist business owner',
+			5: 'Cynical clerk seducing their way up',
+			6: 'Desperately confused petitioner',
+			7: 'Distracted record archivist',
+			8: 'Hapless tax debtor doing “favors”',
+			9: 'Litigant seeking to bribe someone',
+			10:'Official demoted for his sins',
+			11:'Smuggler dodging tariffs',
+			12:'Wizened old clerk who knows all'
+		},
+		'Power Sources': {
+			1: 'Numerous important locals owe them big favors',
+			2: 'Only they actually know how to operate the bureau',
+			3: 'Their peers in the bureau all admire and like them',
+			4: 'Their police ties give them legal carte blanche for much',
+			5: 'They have access to relevant state secrets',
+			6: 'They have blackmail material on their superiors',
+			7: 'They have limited but very useful legislative power',
+			8: 'They have powerful business ties they can exploit',
+			9: 'They have the means and allies to assassinate people',
+			10:'They have ties to powerful local criminal groups',
+			11:'They’re deeply loved by the local ruler for their skills',
+			12:'They’re very personally wealthy or from a rich family'
+		},
+		'Conflicts': {
+			1: 'A noble’s trying to muscle the bureau',
+			2: 'A reformer wants to kick someone out',
+			3: 'A usurper seeks someone’s position',
+			4: 'Somebody’s embezzling state funds',
+			5: 'Someone’s a spy for another bureau',
+			6: 'Someone’s an agent of a foreign state',
+			7: 'The bureau is too rich for its own good',
+			8: 'The bureau’s critically underfunded',
+			9: 'The bureau’s job just got terribly hard',
+			10:'The bureau’s missing taxes or fees due',
+			11:'The bureau’s riddled with corruption',
+			12:'The ruler is upset with the bureau'
+		}, 
+		'Consequences': {
+			1: 'A critical project would fail with much suffering',
+			2: 'A now-unfettered rival would seize much power',
+			3: 'A rival bureaucracy would gain their portfolio',
+			4: 'A vital government function would cease',
+			5: 'An enemy nation would take advantage of it',
+			6: 'An incompetent noble would take over, badly',
+			7: 'Complete administrative paralysis of the nation',
+			8: 'Criminal powers would fill the vacuum',
+			9: 'Government secrets would scatter with clerks',
+			10:'It would enrage the ruler or other bureaucrats',
+			11:'Oppressed peasants would chance a revolt',
+			12:'Unrelated services would worsen as focus shifts'
+		},
+		'Court Defenses': {
+			1: 'A mighty wizard in their debt',
+			2: 'Confiscated magical artifacts',
+			3: 'Contingent of well-trained police',
+			4: 'Deal with a supernatural protector',
+			5: 'Decentralized offices of import',
+			6: 'Detachments of regular soldiers',
+			7: 'Guardian sorcerers for the office',
+			8: 'Heavily-armed tax enforcers',
+			9: 'Not all clerks are human',
+			10:'Operatives from the espionage arm',
+			11:'Sheer numbers of clerks',
+			12:'Venerable fixed wards'
+		}
+	},
 	'Business': {},
 	'Community': {},
 	'Criminal': {
-		'moods': {
+				'Regard': {
+			1: '',
+			2: '',
+			3: '',
+			4: '',
+			5: '',
+			6: '',
+			7: '',
+			8: '',
+			9: '',
+			10: '',
+			11: '',
+			12: ''
+		},
+		'Major Actor': {
 			1: '',
 			2: '',
 			3: '',
@@ -141,23 +254,75 @@ const courts = {
 			11:'',
 			12:''
 		},
-		'Major Actor': {
-
-		},
 		'Minor Actor': {
-
+			1: '',
+			2: '',
+			3: '',
+			4: '',
+			5: '',
+			6: '',
+			7: '',
+			8: '',
+			9: '',
+			10:'',
+			11:'',
+			12:''
 		},
 		'Power Sources': {
-
+			1: '',
+			2: '',
+			3: '',
+			4: '',
+			5: '',
+			6: '',
+			7: '',
+			8: '',
+			9: '',
+			10:'',
+			11:'',
+			12:''
 		},
 		'Conflicts': {
-
+			1: '',
+			2: '',
+			3: '',
+			4: '',
+			5: '',
+			6: '',
+			7: '',
+			8: '',
+			9: '',
+			10:'',
+			11:'',
+			12:''
 		}, 
 		'Consequences': {
-
+			1: '',
+			2: '',
+			3: '',
+			4: '',
+			5: '',
+			6: '',
+			7: '',
+			8: '',
+			9: '',
+			10:'',
+			11:'',
+			12:''
 		},
 		'Court Defenses': {
-
+			1: '',
+			2: '',
+			3: '',
+			4: '',
+			5: '',
+			6: '',
+			7: '',
+			8: '',
+			9: '',
+			10:'',
+			11:'',
+			12:''
 		}
 	}
 };
