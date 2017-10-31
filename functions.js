@@ -14,13 +14,15 @@ function genCourt(type) {
 	type === 'rand' ?  courtType = courtTypes[ genRand(5) ] : courtType = courtTypes [Number(type) ];
 
     // Generates our major actors.
-	//const majorActors = genMajorActors(3);
+	const majorActors = genMajorActors(courtType, 3);
 
 	// Reference the appropriate objects for detailing the structure.
-	const court = [ `Court Type: ${ courtType }`,
+	let court = [ `Court Type: ${ courtType }`,
 		`Court Power structure: ${ courtStructure[crtStruct] }`,
 		`Court Status: ${ courts[ courtType ][ 'firstChart' ][ genRand(12) ] }`
 	];
+
+	court = court.concat(majorActors);
 
 	// Append to index.
 	renderResult(court);
@@ -39,4 +41,14 @@ function renderResult(result) {
 
 	// Increment resultNumber for future references.
 	resultNumber++;
+}
+
+// Accepts a court type and a number.  Returns an array of N major actors.
+function genMajorActors(courtType, number) {
+  let results = [];
+  for ( let i = 0; i < number; i ++ ) {
+  	results.push(`Major Actor: ${ courts[ courtType ][ 'Major Actor' ][ genRand(12) ] }`);
+  }
+
+  return results;
 }
