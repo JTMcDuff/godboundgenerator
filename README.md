@@ -8,9 +8,10 @@ Generates quick results from the various Godbound charts.  While currently this 
 
 
 ## TODO
-*  Add functionality for Major Actors.
-*  Add data for Business courts.
-*  Add functionality to generate power structures for Major Actors.
+*  Refactor renderResult into renderCourt with appropriate handling of court object.
+*  Refactor genCourt to create a court object.
+*  Refactor Major Actor functionality to be an array inside the court object.
+*  Refactor genMajorActors to include power sources.
 
 ## Court Generation Steps
 1.  Generate Organization Power Structure.  -- Working

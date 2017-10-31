@@ -52,3 +52,8 @@ function genMajorActors(courtType, number) {
 
   return results;
 }
+
+// genPowerSource returns a powerStructure from the appropriate court.
+function genPowerSource(court) {
+	return courts[ court[ 'Power Sources' ][ genRand(12) ] ];
+}
