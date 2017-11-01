@@ -8,10 +8,8 @@ Generates quick results from the various Godbound charts.  While currently this 
 
 
 ## TODO
-*  Refactor renderResult into renderCourt with appropriate handling of court object.
-*  Refactor genCourt to create a court object.
-*  Refactor Major Actor functionality to be an array inside the court object.
-*  Refactor genMajorActors to include power sources.
+* 
+* Refactor genMajorActors to include power sources.
 * Add functionality for generating consequences.
 
 ## Court Generation Steps

@@ -34,10 +34,13 @@ function renderCourt(court) {
 	// Render each item into the new div.
 	$(`#${resultNumber}`).append(`<p class="courttype">Court Type: ${ court[ 'type' ] } </p>`);
 	$(`#${resultNumber}`).append(`<p class="powerstructure">Power Structure: ${ court[ 'power Structure' ] }</p>`);
+	
 	// Create a separate div for the actors
 	$(`#${resultNumber}`).append(`<div class="actors${resultNumber}">Major Actors</div>`);
+
+	//Iterate through the major actors, rendering them and their power sources.
 	court['major actors'].forEach( (actor)=> {
-			$(`.actors${resultNumber}`).append(`<p class="majoractor">Major Actor: ${ actor } </p>`);
+			$(`.actors${resultNumber}`).append(`<p class="majoractor">Major Actor: ${ actor[0] }  Power Source:  ${ actor[1] } </p>`);
 	})
 
 
@@ -45,17 +48,13 @@ function renderCourt(court) {
 	resultNumber++;
 }
 
-// Accepts a court type and a number.  Returns an array of N major actors.
+// Accepts a court type and a number.  Returns an array of tuples, each containing an actor and a power source.
 function genMajorActors(courtType, number) {
   let results = [];
   for ( let i = 0; i < number; i ++ ) {
-  	results.push(`${ courts[ courtType ][ 'Major Actor' ][ genRand(12) ] }`);
-  }
+  	results.push( [ `${ courts[ courtType ][ 'Major Actor' ][ genRand(12) ] }`, `${ courts[ courtType ][ 'Power Sources' ][ genRand(12) ] }` ] );
+  };
 
   return results;
 }
 
-// genPowerSource returns a powerStructure from the appropriate court.
-function genPowerSource(court) {
-	return courts[ court[ 'Power Sources' ][ genRand(12) ] ];
-}
