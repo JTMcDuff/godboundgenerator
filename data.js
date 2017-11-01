@@ -224,7 +224,7 @@ const courts = {
 		}
 	},
 	'Business': {		
-		'Regard': {
+		'firstChart': {
 			1: 'They’re teetering on the edge of bankruptcy.',
 			2: 'It’s been a long, dry season of barely hanging on.',
 			3: 'It’s a recent golden age of sudden, dramatic expansion.',
@@ -282,8 +282,8 @@ const courts = {
 		},
 		'Conflicts': {
 			1: 'A competitor’s trying to buy them out.',
-			2: 'A traitor’s working for a competitor.',
-			3: 'It’s struggling under a heavy debt.',
+			2: 'A traitor\’s working for a competitor.',
+			3: `It’s struggling under a heavy debt.`,
 			4: 'Major actors are divided on strategy.',
 			5: 'Recent effort has gone drastically bad.',
 			6: 'The employees are in an uproar.',
@@ -291,8 +291,8 @@ const courts = {
 			8: 'The owner is incapacitated indefinitely.',
 			9: 'The ruler “asked” for a very costly favor.',
 			10:'Their survival hinges on ongoing crime.',
-			11:'They’re covering up a major crime.',
-			12:'They’ve lost a vital secret or tool.'
+			11: `They’re covering up a major crime.`,
+			12: `They’ve lost a vital secret or tool.`
 		}, 
 		'Consequences': {
 			1: 'A fragile, valuable economic link breaks up.',
@@ -303,10 +303,10 @@ const courts = {
 			6: 'The local ruler relies on it for exerting control.',
 			7: 'Their competitors are much more rapacious.',
 			8: 'They provide critical employment to locals.',
-			9: 'They’re holding a community creditor at bay.',
-			10:'They’re keeping out ruffians and exploiters.',
-			11:'They’re paying off outside threats or grafters.',
-			12:'They’re the only supplier of a vital local necessity.'
+			9: 'They\’re holding a community creditor at bay.',
+			10:'They\’re keeping out ruffians and exploiters.',
+			11:'They\’re paying off outside threats or grafters.',
+			12:'They\’re the only supplier of a vital local necessity.'
 		},
 		'Court Defenses': {
 			1: '“Protection” outfit legbreakers',
