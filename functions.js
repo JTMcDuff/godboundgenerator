@@ -19,6 +19,7 @@ function genCourt(type) {
 		'type': courtType,
 		'power structure': courtStructure[ genRand(6) ],
 		'court status': courts[ courtType ][ 'firstChart' ][ genRand(12) ],
+		'consequence': courts[ courtType ][ 'Consequences'][ genRand(12)],
 		'major actors': majorActors
 	};
 
@@ -33,8 +34,9 @@ function renderCourt(court) {
 
 	// Render each item into the new div.
 	$(`#${resultNumber}`).append(`<p class="courttype">Court Type: ${ court[ 'type' ] } </p>`);
-	$(`#${resultNumber}`).append(`<p class="powerstructure">Power Structure: ${ court[ 'power Structure' ] }</p>`);
-	
+	$(`#${resultNumber}`).append(`<p class="powerstructure">Power Structure: ${ court[ 'power structure' ] }</p>`);
+	$(`#${resultNumber}`).append(`<p class="consequences">Consequence of its Destruction: ${ court[ 'consequence' ] }</p>`);
+
 	// Create a separate div for the actors
 	$(`#${resultNumber}`).append(`<div class="actors${resultNumber}">Major Actors</div>`);
 
@@ -57,4 +59,3 @@ function genMajorActors(courtType, number) {
 
   return results;
 }
-

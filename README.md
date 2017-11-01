@@ -9,7 +9,7 @@ Generates quick results from the various Godbound charts.  While currently this 
 
 ## TODO
 * 
-* Refactor genMajorActors to include power sources.
+* 
 * Add functionality for generating consequences.
 
 ## Court Generation Steps
