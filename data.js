@@ -223,7 +223,106 @@ const courts = {
 			12:'Venerable fixed wards'
 		}
 	},
-	'Business': {},
+	'Business': {		
+		'Regard': {
+			1: 'They’re teetering on the edge of bankruptcy.',
+			2: 'It’s been a long, dry season of barely hanging on.',
+			3: 'It’s a recent golden age of sudden, dramatic expansion.',
+			4: 'It’s chasing itself in circles, without coherent direction.',
+			5: 'It’s being threatened by a rival enterprise.',
+			6: 'It’s made an enemy of the local officials somehow.',
+			7: 'A great opportunity is present, albeit hard to exploit.',
+			8: 'It’s fat and happy, going on as it always has before.',
+			9: 'The local ruler has an interest in its thriving.',
+			10: 'It’s secretly cutting corners in its products or services.',
+			11: 'It’s getting by on past glories, now a dwindled remnant.',
+			12: 'It’s trying to branch out into a new field or location.'
+		},
+		'Major Actor': {
+			1: 'Biggest business rival',
+			2: 'Biggest customer',
+			3: 'Brash entrepreneur',
+			4: 'Brilliant innovator',
+			5: 'Careless owner’s child',
+			6: 'Chief accountant',
+			7: 'Critically-skilled employee',
+			8: 'Hard-bitten founder',
+			9: 'Heir-apparent to business',
+			10:'Main supplier of goods',
+			11:'Major investor',
+			12:'Popular crew foreman'
+		},
+		'Minor Actor': {
+			1: '“Protection” outfit heavy',
+			2: 'Aspiring vendor to the business',
+			3: 'Bribeable local inspector',
+			4: 'Devoted long-time staffer',
+			5: 'Embittered ex-employee',
+			6: 'Gold-digging lover of the owner',
+			7: 'Infuriated customer',
+			8: 'Oldest employee of the business',
+			9: 'Petty thief of stock',
+			10:'Shady black market contact',
+			11:'Spy for a rival business',
+			12:'Wildly impractical dreamer'
+		},
+		'Power Sources': {
+			1: 'The business owes them a great deal of money.',
+			2: 'The employees love them and listen to them unfailingly.',
+			3: 'The others are physically afraid of their displeasure.',
+			4: 'The vendors only trust them to negotiate supply buys.',
+			5: 'They can legally wreck the business if too displeased.',
+			6: 'They have magic or technology critical to the business.',
+			7: 'They hold a secret critical to carrying out the business.',
+			8: 'They know the details of a secret crime of the business.',
+			9: 'They legally hold a large amount of the business’ money.',
+			10:'They own the deed to a major business facility.',
+			11:'They’re holding back the local extortionists and thieves.',
+			12:'They’re particularly friendly with the local ruler.'
+		},
+		'Conflicts': {
+			1: 'A competitor’s trying to buy them out.',
+			2: 'A traitor’s working for a competitor.',
+			3: 'It’s struggling under a heavy debt.',
+			4: 'Major actors are divided on strategy.',
+			5: 'Recent effort has gone drastically bad.',
+			6: 'The employees are in an uproar.',
+			7: 'The locals blame it for something dire.',
+			8: 'The owner is incapacitated indefinitely.',
+			9: 'The ruler “asked” for a very costly favor.',
+			10:'Their survival hinges on ongoing crime.',
+			11:'They’re covering up a major crime.',
+			12:'They’ve lost a vital secret or tool.'
+		}, 
+		'Consequences': {
+			1: 'A fragile, valuable economic link breaks up.',
+			2: 'Debt chain reaction takes out a major firm.',
+			3: 'It would enrage their major customers.',
+			4: 'It would infuriate influential business partners.',
+			5: 'Only they can provide a critical local service.',
+			6: 'The local ruler relies on it for exerting control.',
+			7: 'Their competitors are much more rapacious.',
+			8: 'They provide critical employment to locals.',
+			9: 'They’re holding a community creditor at bay.',
+			10:'They’re keeping out ruffians and exploiters.',
+			11:'They’re paying off outside threats or grafters.',
+			12:'They’re the only supplier of a vital local necessity.'
+		},
+		'Court Defenses': {
+			1: '“Protection” outfit legbreakers',
+			2: 'A crew of burly, loyal employees',
+			3: 'Decentralized business control',
+			4: 'Expensive lawyers',
+			5: 'Heavily fortified businessplace',
+			6: 'Hired local wizard',
+			7: 'Hired mercenaries',
+			8: 'Inherited magical defenses',
+			9: 'Personally fearsome owner',
+			10:'Protective local citizens',
+			11:'Purchased magical defenses',
+			12:'Special police protection'
+		}
+	},
 	'Community': {},
 	'Criminal': {
 				'Regard': {
