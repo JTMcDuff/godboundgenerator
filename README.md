@@ -12,12 +12,13 @@ Generates quick results from the various Godbound charts.  While currently this 
 *  Refactor genCourt to create a court object.
 *  Refactor Major Actor functionality to be an array inside the court object.
 *  Refactor genMajorActors to include power sources.
+* Add functionality for generating consequences.
 
 ## Court Generation Steps
 1.  Generate Organization Power Structure.  -- Working
 2.  Choose or Generate Court type.  -- Working
-3.  Generate at least three major actors.  Right now force to three, eventually add options.
-4.  Generate a power structure for each major actor.
+3.  Generate at least three major actors.  Working, set to three actors.
+4.  Generate a power structure for each major actor.  -- Function written, need to run plumbing.
 5.  Pick at least one conflict.  Start with one, eventually make this selectable.
 6.  Pick a protagonist and an antagonist for each conflict.
 7.  Generate a few minor actors.  Make this selectable eventually.
