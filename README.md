@@ -7,11 +7,11 @@ Generates quick results from the various Godbound charts.  While currently this 
 
 
 ## TODO
-* Refactor Actors into table for rendering purposes
 * Add back-end for conflict generator, including picking a protagonist and antagonist.
 * Add front-end for conflict generator.
 * Add back-end for minor actor generation.
 * Resolve issue with "they're" leading to strange characters.
+* Add Criminal court information.
 
 ## Court Generation Steps
 1.  Generate Organization Power Structure.  -- Working

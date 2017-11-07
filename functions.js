@@ -29,6 +29,8 @@ function genCourt(type) {
 
 // Accepts a court object and renders its elements in order to the result div.
 function renderCourt(court) {
+	let row = '';
+
 	//  Append a correctly numbered div to results, then increment resultNumber
 	$("#results").append("<div id=" + resultNumber + "></div>");
 
@@ -36,15 +38,30 @@ function renderCourt(court) {
 	$(`#${resultNumber}`).append(`<p class="courttype">Court Type: ${ court[ 'type' ] } </p>`);
 	$(`#${resultNumber}`).append(`<p class="powerstructure">Power Structure: ${ court[ 'power structure' ] }</p>`);
 	$(`#${resultNumber}`).append(`<p class="consequences">Consequence of its Destruction: ${ court[ 'consequence' ] }</p>`);
+	
+	//  Create actor table for inserting actors.
+	let actorTable = $(`<table class="actorstable ${resultNumber}">
+		<tr>
+		<th>Actor</th>
+		<th>Type</th>
+		<th>Power Source</th>
+		</tr>
+		</table>
+		`);
 
-	// Create a separate div for the actors
-	$(`#${resultNumber}`).append(`<div class="actors${resultNumber}">Major Actors</div>`);
-
-	//Iterate through the major actors, rendering them and their power sources.
+	//Iterate through the major actors, inserting them into the actor table.
 	court['major actors'].forEach( (actor)=> {
-			$(`.actors${resultNumber}`).append(`<p class="majoractor">Major Actor: ${ actor[0] }  Power Source:  ${ actor[1] } </p>`);
-	})
-
+		row = $( `<tr>
+			<td> ${ actor[0] } </td>
+			<td> Major </td>
+			<td> ${ actor[1] } </td>
+			</tr>
+		`);
+		actorTable.append(row);
+	});
+	
+	// Append the completed actorTable to our results.
+	$(`#${resultNumber}`).append(actorTable);
 
 	// Increment resultNumber for future references.
 	resultNumber++;
