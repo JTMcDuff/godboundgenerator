@@ -4,7 +4,6 @@ Generates quick results from the various Godbound charts.  While currently this 
 ## Tech Stack
 * HTML 5 / CSS
 * Javascript, including ES 6 syntax
-* jQuery 3.2.1
 
 
 ## TODO

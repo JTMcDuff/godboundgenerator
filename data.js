@@ -323,9 +323,108 @@ const courts = {
 			12:'Special police protection'
 		}
 	},
-	'Community': {},
+	'Community': {
+		'firstChart': {
+			1: 'Amoral, indifferent to harm to outsiders or strangers',
+			2: 'Corrupt, dealing with bandits and the sinister',
+			3: 'Dislocated, recently forced to move or give up land',
+			4: 'Divided, two factions furious with each other',
+			5: 'Flush, enjoying new wealth from some new source',
+			6: 'Insular, polite but reluctant to deal with strangers',
+			7: 'Martial, expecting violence from the world',
+			8: 'Oppressed, afflicted by some outside power',
+			9: 'Pious, with life revolving around the community faith',
+			10: 'Placid, the locals largely content with their lot',
+			11: 'Rigid, clinging to tradition in the face of some peril',
+			12: 'Xenophobic, mistrusting outsiders as dangerous'
+		},
+		'Major Actor': {
+			1: 'Best hunter or farmer',
+			2: 'Biggest gossip',
+			3: 'Chief troublemaker',
+			4: 'Hedge magician',
+			5: 'Keeper of local relics',
+			6: 'Mayor or chieftain',
+			7: 'Most eligible unwed youth',
+			8: 'Official from outside world',
+			9: 'Rich trader or merchant',
+			10:'Rival village or tribe chief',
+			11:'Shaman or village priest',
+			12:'Wealthy outsider'
+		},
+		'Minor Actor': {
+			1: 'Adulterous spouse of major actor',
+			2: 'Bad-luck farmer or hunter',
+			3: 'Bandit seeking refuge or loot',
+			4: 'Barfly who hears all',
+			5: 'Local innkeeper or guest-keeper',
+			6: 'Local miller or tanner',
+			7: 'Naive farm lad or lass',
+			8: 'Native prodigy at some local skill',
+			9: 'Outcast suspected of evil magic',
+			10:'Part-time prostitute',
+			11:'Retired outsider seeking quiet',
+			12:'Shabby vagabond'
+		},
+		'Power Sources': {
+			1: 'Important outsiders will only deal with them',
+			2: 'Only they know a skill that’s vital to the community',
+			3: 'Their word is taken as final in matters of tradition',
+			4: 'They have a huge family that backs them',
+			5: 'They have a powerful magical item at their disposal',
+			6: 'They have outsider friends with few scruples',
+			7: 'They have unusual wealth for the community',
+			8: 'They know secret magic or forbidden arts',
+			9: 'They know the local terrain and its useful secrets',
+			10:'They’re related to several important families or people',
+			11:'They’re remarkably beautiful and persuasive',
+			12:'They’re very personally formidable in a fight'
+		},
+		'Conflicts': {
+			1: 'A family head is mistreating their kin',
+			2: 'A family is being denied its old rights',
+			3: 'A local is profiting from a dire crime',
+			4: 'A new faith is preaching to locals',
+			5: 'Dire want threatens family survival',
+			6: 'Locals struggle to own a new discovery',
+			7: 'Outsiders seek to buy village land',
+			8: 'Outsiders seek to control the group',
+			9: 'Someone might be using dark magic',
+			10:'Someone wants to attack a rival group',
+			11:'Tradition is demanding a sacrifice',
+			12:'Vital resources are being depleted'
+		}, 
+		'Consequences': {
+			1: 'A celestial law will loosen due to lack of rites',
+			2: 'A dark power will recruit the survivors',
+			3: 'A local noble will be angry at the loss',
+			4: 'A now-unchecked threat will grow',
+			5: 'A survivor will cut a deal with a sinister power',
+			6: 'An important trade link will collapse',
+			7: 'Kin-related villages will be furious',
+			8: 'Nearby communities will lack a vital export',
+			9: 'Revolutionaries will recruit the survivors',
+			10:'Survivors will scatter and speak of the PCs',
+			11:'The fury of a powerful home-town hero',
+			12:'The survivors will turn to banditry'
+		},
+		'Court Defenses': {
+			1: 'A guardian spirit or entity',
+			2: 'A mighty retired hero',
+			3: 'A mob of angry peasants',
+			4: 'A potent local sorcerer',
+			5: 'A relic of protection or power',
+			6: 'A resident noble and his guards',
+			7: 'A secret cult with potent magic',
+			8: 'A small garrison of outside troops',
+			9: 'Bandits who need the group',
+			10:'Close alliances with neighbors',
+			11:'So poor they can easily flee',
+			12:'Trained guardian beasts'
+		}
+	},
 	'Criminal': {
-				'Regard': {
+				'firstChart': {
 			1: '',
 			2: '',
 			3: '',
