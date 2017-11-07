@@ -23,6 +23,7 @@ function genCourt(type) {
 		'court status': courts[ courtType ][ 'firstChart' ][ genRand(12) ],
 		'consequence': courts[ courtType ][ 'Consequences'][ genRand(12)],
 		'major actors': majorActors,
+		'minor actors': minorActors,
 		// conflicts will eventually be selectable, so we are setting it up as an array now.
 		'conflicts': [ courts[ courtType ][ 'Conflicts' ][ genRand(12) ] ]
 	};
@@ -63,7 +64,17 @@ function renderCourt(court) {
 		`);
 		actorTable.append(row);
 	});
-	
+
+	// Do the same for the minor actors.
+	court['minor actors'].forEach( (actor)=> {
+		row = $( `<tr>
+			<td> ${ actor } </td>
+			<td> Minor </td>
+			<td> N/A </td>
+			</tr>
+		`);
+		actorTable.append(row);
+	});
 	// Append the completed actorTable to our results.
 	$(`#${resultNumber}`).append(actorTable);
 
@@ -76,14 +87,16 @@ function genMajorActors(courtType, number) {
   let results = [];
   for ( let i = 0; i < number; i ++ ) {
   	results.push( [ `${ courts[ courtType ][ 'Major Actor' ][ genRand(12) ] }`, `${ courts[ courtType ][ 'Power Sources' ][ genRand(12) ] }` ] );
-  };
+  }
 
+  return results;
+};
 // genMinorActors accepts a court type and a number.  It returns a simple array, as minor actors lack a power source.
 function genMinorActors(courtType, number) {
   let results = [];
   for ( let i = 0; i < number; i ++ ) {
   	results.push( `${ courts[ courtType ][ 'Minor Actor' ][ genRand(12) ] }` );
-  };
+  }
 
   return results;
 }
