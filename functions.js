@@ -11,8 +11,10 @@ function genCourt(type) {
 	// If selector was random, generate random type, otherwise use the type.
 	type === 'rand' ?  courtType = courtTypes[ genRand(5) ] : courtType = courtTypes [Number(type) ];
 
-    // Generates our major actors.
+    // Generate major and minor actors
 	const majorActors = genMajorActors(courtType, 3);
+	const minorActors = genMinorActors(courtType, 3);
+
 
 	// Reference the appropriate objects for detailing the structure.
 	let court = {
@@ -20,7 +22,9 @@ function genCourt(type) {
 		'power structure': courtStructure[ genRand(6) ],
 		'court status': courts[ courtType ][ 'firstChart' ][ genRand(12) ],
 		'consequence': courts[ courtType ][ 'Consequences'][ genRand(12)],
-		'major actors': majorActors
+		'major actors': majorActors,
+		// conflicts will eventually be selectable, so we are setting it up as an array now.
+		'conflicts': [ courts[ courtType ][ 'Conflicts' ][ genRand(12) ] ]
 	};
 
 	// Fire rendercourt
@@ -67,11 +71,18 @@ function renderCourt(court) {
 	resultNumber++;
 }
 
-// Accepts a court type and a number.  Returns an array of tuples, each containing an actor and a power source.
+// genMajorActors accept a court type and a number.   Returns an array of tuple, each containing an actor and a power source.
 function genMajorActors(courtType, number) {
   let results = [];
   for ( let i = 0; i < number; i ++ ) {
   	results.push( [ `${ courts[ courtType ][ 'Major Actor' ][ genRand(12) ] }`, `${ courts[ courtType ][ 'Power Sources' ][ genRand(12) ] }` ] );
+  };
+
+// genMinorActors accepts a court type and a number.  It returns a simple array, as minor actors lack a power source.
+function genMinorActors(courtType, number) {
+  let results = [];
+  for ( let i = 0; i < number; i ++ ) {
+  	results.push( `${ courts[ courtType ][ 'Minor Actor' ][ genRand(12) ] }` );
   };
 
   return results;
