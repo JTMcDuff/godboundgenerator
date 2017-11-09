@@ -13,6 +13,8 @@ Generates quick results from the various Godbound charts.  While currently this 
 * Resolve issue with "they're" leading to strange characters.
 * Add Criminal court information.
 * Add way for Minor Actors to be involved in court conflicts.
+* Add way for firstChart to populate a reference.
+  ** Example: Criminal Courts are "main line of crime."
 
 ## Court Generation Steps
 1.  Generate Organization Power Structure.  -- Working

@@ -25,7 +25,8 @@ function genCourt(type) {
 		'major actors': majorActors,
 		'minor actors': minorActors,
 		// conflicts will eventually be selectable, so we are setting it up as an array now.
-		'conflicts': [ courts[ courtType ][ 'Conflicts' ][ genRand(12) ] ]
+		'conflicts': [ courts[ courtType ][ 'Conflicts' ][ genRand(12) ] ],
+		'defense': courts[ courtType ][ 'Court Defenses'][ genRand(12) ]
 	};
 
 	// Fire rendercourt
@@ -43,6 +44,8 @@ function renderCourt(court) {
 	$(`#${resultNumber}`).append(`<p class="courttype">Court Type: ${ court[ 'type' ] } </p>`);
 	$(`#${resultNumber}`).append(`<p class="powerstructure">Power Structure: ${ court[ 'power structure' ] }</p>`);
 	$(`#${resultNumber}`).append(`<p class="consequences">Consequence of its Destruction: ${ court[ 'consequence' ] }</p>`);
+	$(`#${resultNumber}`).append(`<p class="defenses">Court Defenses: ${ court[ 'defense' ] }</p>`);
+
 	
 	//  Create actor table for inserting actors.
 	let actorTable = $(`<table class="actorstable ${resultNumber}">
