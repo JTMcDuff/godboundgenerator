@@ -46,8 +46,17 @@ function renderCourt(court) {
 	$(`#${resultNumber}`).append(`<p class="consequences">Consequence of its Destruction: ${ court[ 'consequence' ] }</p>`);
 	$(`#${resultNumber}`).append(`<p class="defenses">Court Defenses: ${ court[ 'defense' ] }</p>`);
 
-	
+	// renderActors function adds html table for actors.
+	renderActors( court, resultNumber);
 	//  Create actor table for inserting actors.
+	
+
+	// Increment resultNumber for future references.
+	resultNumber++;
+}
+
+// Accepts the court and current resultNumber.  Generates and appends a table to the appropriate result div.
+function renderActors( court, resultNumber ) {
 	let actorTable = $(`<table class="actorstable ${resultNumber}">
 		<tr>
 		<th>Actor</th>
@@ -80,9 +89,6 @@ function renderCourt(court) {
 	});
 	// Append the completed actorTable to our results.
 	$(`#${resultNumber}`).append(actorTable);
-
-	// Increment resultNumber for future references.
-	resultNumber++;
 }
 
 // genMajorActors accept a court type and a number.   Returns an array of tuple, each containing an actor and a power source.

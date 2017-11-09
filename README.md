@@ -7,8 +7,6 @@ Generates quick results from the various Godbound charts.  While currently this 
 
 
 ## TODO
-* Add Defense back and front-end.
-* Extend conflict generator to actually choose protag and antag.
 * Add front-end for conflict generator, either as an extension of the existing table, or as its own table.
 * Resolve issue with "they're" leading to strange characters.
 * Add Criminal court information.
