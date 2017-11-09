@@ -481,18 +481,18 @@ const courts = {
 			12:'Provides social legitimacy for the group'
 		},
 		'Conflicts': {
-			1: '',
-			2: '',
-			3: '',
-			4: '',
-			5: '',
-			6: '',
-			7: '',
-			8: '',
-			9: '',
-			10:'',
-			11:'',
-			12:''
+			1: 'A lieutenant rebels against the boss',
+			2: 'An assassin\'s after a major actor',
+			3: 'Control of a new drug or contraband',
+			4: 'Control of an important local official',
+			5: 'Dispute over whether to kill someone',
+			6: 'Expulsion of outsiders from their turf',
+			7: 'Possession of a new-found treasure',
+			8: 'Revenge for a theft or offense',
+			9: 'Someone\'s trying to unify local gangs',
+			10:'Someone\'s turned traitor to the law',
+			11:'Subverting a source of law and order',
+			12:'Turf struggle over working territories'
 		}, 
 		'Consequences': {
 			1: '',

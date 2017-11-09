@@ -29,6 +29,12 @@
 </body>
 
 <script type="text/javascript">
+
+	// genRand returns a random number from 1 to num
+	function genRand(num) {
+	    return Math.floor(Math.random() * (num)) + 1;
+	}
+
 	let resultNumber = 0;
 	// jQuery to load once page loads
 	$(document).ready( function() {
