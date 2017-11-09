@@ -10,6 +10,7 @@ function renderCourt(court) {
 	// Render each item into the new div.
 	$(`#${resultNumber}`).append(`<p class="courttype">Court Type: ${ court[ 'type' ] } </p>`);
 	$(`#${resultNumber}`).append(`<p class="powerstructure">Power Structure: ${ court[ 'power structure' ] }</p>`);
+	$(`#${resultNumber}`).append(`<p class="firstChart">${ court[ 'firstChart heading'] }: ${ court[ 'firstChart' ] }</p>`);
 	$(`#${resultNumber}`).append(`<p class="consequences">Consequence of its Destruction: ${ court[ 'consequence' ] }</p>`);
 	$(`#${resultNumber}`).append(`<p class="defenses">Court Defenses: ${ court[ 'defense' ] }</p>`);
 

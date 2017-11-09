@@ -25,6 +25,7 @@ const courtTypes = {
 const courts = {
 	'Aristocratic': {
 		'firstChart': {
+			'heading': 'Court Mood',
 			1: 'Mood: Beauty-loving, with exquisite art and architecture',
 			2: 'Mood: Bluff and familiar, with easy access to nobility',
 			3: 'Mood: Bracing for an expected clash or change of rulers',
@@ -124,7 +125,8 @@ const courts = {
 		}
 	},
 	'Bureaucratic': {
-				'firstChart': {
+		'firstChart': {
+			'heading':'How is the Bureaucracy Regarded?',
 			1: 'The bureaucracy is admired for its probity and efficiency at its work',
 			2: 'The bureaucracy is aristocratic, a refuge for excess noble offspring.',
 			3: 'The bureaucracy is autocratic, the real power behind a puppet ruler.',
@@ -225,6 +227,7 @@ const courts = {
 	},
 	'Business': {		
 		'firstChart': {
+			'heading': 'How is the Business Currently Doing?',
 			1: 'They’re teetering on the edge of bankruptcy.',
 			2: 'It’s been a long, dry season of barely hanging on.',
 			3: 'It’s a recent golden age of sudden, dramatic expansion.',
@@ -325,6 +328,7 @@ const courts = {
 	},
 	'Community': {
 		'firstChart': {
+			'heading': 'Community Temperment',
 			1: 'Amoral, indifferent to harm to outsiders or strangers',
 			2: 'Corrupt, dealing with bandits and the sinister',
 			3: 'Dislocated, recently forced to move or give up land',
@@ -424,7 +428,9 @@ const courts = {
 		}
 	},
 	'Criminal': {
-				'firstChart': {
+
+		'firstChart': {
+			'heading': 'Main Line of Crime',
 			1: 'Banditry in the surrounding area',
 			2: 'Blackmailing and spying for the rich',
 			3: 'Extortion from local merchants',
@@ -495,32 +501,32 @@ const courts = {
 			12:'Turf struggle over working territories'
 		}, 
 		'Consequences': {
-			1: '',
-			2: '',
-			3: '',
-			4: '',
-			5: '',
-			6: '',
-			7: '',
-			8: '',
-			9: '',
-			10:'',
-			11:'',
-			12:''
+			1: 'A local group relies on them for a living',
+			2: 'The ruler uses them to contain a serious rival',
+			3: 'Their affiliates provide vital financial services',
+			4: 'Their blackmail would get out, causing chaos',
+			5: 'They act as jailers to a magical danger',
+			6: 'They actually provide vital aid to the poor',
+			7: 'They bleed off otherwise-active rebels',
+			8: 'They defend an innocent group from pogroms',
+			9: 'They hold back a tyrannical force of oppression',
+			10:'They keep monsters from infesting dark places',
+			11:'They keep practical order on the streets',
+			12:'They retain important magical arts'
 		},
 		'Court Defenses': {
-			1: '',
-			2: '',
-			3: '',
-			4: '',
-			5: '',
-			6: '',
-			7: '',
-			8: '',
-			9: '',
-			10:'',
-			11:'',
-			12:''
+			1: 'Crew of elite assassins',
+			2: 'Elaborate poisons',
+			3: 'Extremely hard to find',
+			4: 'Frame foes for crimes',
+			5: 'Hidden in fortified area',
+			6: 'Hostages or familial threats',
+			7: 'Innocent front group',
+			8: 'Many suborned commoners',
+			9: 'Mobs of burly street thugs',
+			10:'Several corrupt officials',
+			11:'Stolen magical relics',
+			12:'Treacherous seducer'
 		}
 	}
 };

@@ -19,7 +19,8 @@ function genCourt(type) {
 	let court = {
 		'type': courtType,
 		'power structure': courtStructure[ genRand(6) ],
-		'court status': courts[ courtType ][ 'firstChart' ][ genRand(12) ],
+		'firstChart heading': courts[ courtType ][ 'firstChart' ][ 'heading'],
+		'firstChart': courts[ courtType ][ 'firstChart' ][ genRand(12) ],
 		'consequence': courts[ courtType ][ 'Consequences'][ genRand(12)],
 		'major actors': majorActors,
 		'minor actors': minorActors,
