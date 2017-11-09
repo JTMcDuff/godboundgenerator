@@ -9,14 +9,16 @@ Generates quick results from the various Godbound charts.  While currently this 
 ## TODO
 * Write renderConflicts to render a HTML table.
 * Resolve issue with "they're" leading to strange characters.
+* Add selection boxes for number of Actors.
+* Add selection boxes for number of conflicts.
 
 ## Court Generation Steps
 1.  Generate Organization Power Structure.  -- Working
 2.  Choose or Generate Court type.  -- Working
 3.  Generate at least three major actors.  Working, set to three actors.
 4.  Generate a power structure for each major actor.  -- Working.
-5.  Pick at least one conflict.  Start with one, eventually make this selectable.
+5.  Pick at least one conflict.  -- Need to render conflicts.
 6.  Pick a protagonist and an antagonist for each conflict.
 7.  Generate a few minor actors.  Make this selectable eventually.
 8.  Generate a consequence for its destruction. -- Working.
-9.  Generate at least one defense.  Default to one, eventually make this selectable.
+9.  Generate at least one defense.  Default to one, eventually make this selectable. -- Working
