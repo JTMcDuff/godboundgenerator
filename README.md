@@ -31,6 +31,10 @@ Generates quick results from the various Godbound charts.  Currently this focuse
 9.  Generate at least one defense.  Default to one, eventually make this selectable. -- Working
 
 ## Using Godbound Generator (For non-geeks)
-At the moment, this generator can be used in any modern, up-to-date browser.  Just download the entire repo, and then open the index.html file in a new tab (ctrl+o in Chrome).
+At the moment, this generator can be used in any modern, up-to-date browser.
+1.  Click "Clone or Download."
+2.  Click "Download ZIP."
+3.  Unzip.
+4.  Open the index.html with your browser.
 
 You could also simply drop it on a simple web-server.  I've done no security checking on this code, so be sure you segregate this from anything valuable.
