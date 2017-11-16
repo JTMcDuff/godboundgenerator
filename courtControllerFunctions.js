@@ -2,7 +2,7 @@
 
 // Does all the work necessary to generate a court.
 // Fires renderResult to add it to the index.html.
-function genCourt(type, numMajorActors) {
+function genCourt(type, numMajorActors, numConflicts) {
 	let courtType;
 	
 	// If selector was random, generate random type, otherwise use the type.
@@ -13,7 +13,7 @@ function genCourt(type, numMajorActors) {
 	const minorActors = genMinorActors(courtType, 3);
 
 	// Generate conflicts as an array, passing the Actors as parameters for protagonists and antagonists
-	const conflicts = genConflicts( courtType, majorActors, minorActors, 1);
+	const conflicts = genConflicts( courtType, majorActors, minorActors, numConflicts);
 	console.log('conflicts', conflicts);
 	// Reference the appropriate objects for detailing the structure.
 	const court = {

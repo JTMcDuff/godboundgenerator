@@ -34,6 +34,14 @@
 				<option value="4">4</option>
 				<option value="5">5</option>
 			</select>
+			<p>Conflicts</p>
+			<select class="conflictselector">
+				<option value="1">Default(1)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
 			
 		</div>
 		<div id='results'>
@@ -57,8 +65,9 @@
 			//  Get current type from courtSelector
 			const type =  $('.courtselector').val();
 			const numMajorActors = $('.majoractorselector').val();
+			const numConflicts = $('.conflictselector').val();
 			// Fire genCourt, which will fire renderCourt to add to page.
-			genCourt(type, numMajorActors);
+			genCourt(type, numMajorActors, numConflicts);
 		});
 
 		// Clears the results div when reset clicked.
