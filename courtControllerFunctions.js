@@ -2,21 +2,21 @@
 
 // Does all the work necessary to generate a court.
 // Fires renderResult to add it to the index.html.
-function genCourt(type) {
+function genCourt(type, numMajorActors) {
 	let courtType;
 	
 	// If selector was random, generate random type, otherwise use the type.
 	type === 'rand' ?  courtType = courtTypes[ genRand(5) ] : courtType = courtTypes [Number(type) ];
 
     // Generate major and minor actors
-	const majorActors = genMajorActors(courtType, 3);
+	const majorActors = genMajorActors(courtType, numMajorActors);
 	const minorActors = genMinorActors(courtType, 3);
 
 	// Generate conflicts as an array, passing the Actors as parameters for protagonists and antagonists
 	const conflicts = genConflicts( courtType, majorActors, minorActors, 1);
-
+	console.log('conflicts', conflicts);
 	// Reference the appropriate objects for detailing the structure.
-	let court = {
+	const court = {
 		'type': courtType,
 		'power structure': courtStructure[ genRand(6) ],
 		'firstChart heading': courts[ courtType ][ 'firstChart' ][ 'heading'],
@@ -75,30 +75,31 @@ function genConflicts( courtType, majorActors, minorActors, numConflicts) {
 		// choose a conflict.
 		conflict = [ courts[ courtType ][ 'Conflicts' ][ genRand(12) ] ];
 
-		// choose a protagonist
-		// first find the correct index and assign that value to protag
-		index = genRand( majLen ) - 1;
+		if (majLen > 1 ){
+			// choose a protagonist
+			// first find the correct index and assign that value to protag
+			index = genRand( majLen ) - 1;
 
-		// slice protag out of the array.
-		protag = majorActors[ index ][0];
-		majorActors.splice( index, 1 );
+			// slice protag out of the array.
+			protag = majorActors[ index ][0];
+			majorActors.splice( index, 1 );
 
-		// Generate antag, array is currently smaller
-		index = genRand( majLen - 1 ) - 1 ;
-		antag = majorActors[ index ][0];
+			// Generate antag, array is currently smaller
+			index = genRand( majLen - 1 ) - 1 ;
+			antag = majorActors[ index ][0];
 
-		//Finally, add protag back onto majorActors
-		majorActors.push(protag);
+			//Finally, add protag back onto majorActors
+			majorActors.push(protag);
 
-		// add them both to conflict.
-		conflict.push( protag, antag );
+			// add them both to conflict.
+			conflict.push( protag, antag );
 
-		//Finally, choose a minor actor if we have one available and add to conflict.
-		if ( minLen > 0 ) {
-			minor = minorActors[ genRand(minLen) -1 ];
-			conflict.push(minor);
-		}
-
+			//Finally, choose a minor actor if we have one available and add to conflict.
+			if ( minLen > 0 ) {
+				minor = minorActors[ genRand(minLen) -1 ];
+				conflict.push(minor);
+			}
+		}	
 		// Add to results.
 		results.push(conflict);
 	}
