@@ -17,7 +17,6 @@ Generates quick results from the various Godbound charts.  Currently this focuse
 ## TODO
 * Write renderConflicts to render a HTML table similar to renderActors.
 * Resolve issue with "they're" and other apostrophes leading to strange characters.
-* Add selection boxes for number of actors.
 * Add selection boxes for number of conflicts.
 * Update and organize html for future CSS.
 
@@ -34,3 +33,5 @@ Generates quick results from the various Godbound charts.  Currently this focuse
 
 ## Using Godbound Generator (For non-geeks)
 At the moment, this generator can be used in any modern, up-to-date browser.  Just download the entire repo, and then open the index.html file in a new tab (ctrl+o in Chrome).
+
+You could also simply drop it on a simple web-server.  I've done no security checking on this code, so be sure you segregate this from anything valuable.
