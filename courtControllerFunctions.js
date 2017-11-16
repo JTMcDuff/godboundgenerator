@@ -14,7 +14,7 @@ function genCourt(type, numMajorActors, numConflicts) {
 
 	// Generate conflicts as an array, passing the Actors as parameters for protagonists and antagonists
 	const conflicts = genConflicts( courtType, majorActors, minorActors, numConflicts);
-	console.log('conflicts', conflicts);
+
 	// Reference the appropriate objects for detailing the structure.
 	const court = {
 		'type': courtType,

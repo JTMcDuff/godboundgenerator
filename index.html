@@ -16,32 +16,41 @@
 		<div class="courtgenerator">
 			<button id="genCourt"> Generate Court </button>
 			<button id="reset"> Reset </button>
-			<p>Court Type</p>
-			<select class="courtselector">
-				<option value="rand">Random</option>
-				<option value="1">Aristocratic</option>
-				<option value="2">Bureaucratic</option>
-				<option value="3">Business</option>
-				<option value="4">Community</option>
-				<option value="5">Criminal</option>
-			</select>
-			<p>Major Actors</p>
-			<select class="majoractorselector">
-				<option value="3">Default(3)</option>
-				<option value="1">1</option>
-				<option value="2">2</option>
-				<option value="3">3</option>
-				<option value="4">4</option>
-				<option value="5">5</option>
-			</select>
-			<p>Conflicts</p>
-			<select class="conflictselector">
-				<option value="1">Default(1)</option>
-				<option value="2">2</option>
-				<option value="3">3</option>
-				<option value="4">4</option>
-				<option value="5">5</option>
-			</select>
+
+			<div class="courtselector">
+				<p class="selectorheadings">Court Type</p>
+				<select class="courtvalueselector">
+					<option value="rand">Random</option>
+					<option value="1">Aristocratic</option>
+					<option value="2">Bureaucratic</option>
+					<option value="3">Business</option>
+					<option value="4">Community</option>
+					<option value="5">Criminal</option>
+				</select>
+			</div>
+
+			<div class="majoractorselector">
+				<p class="selectorheadings">Major Actors</p>
+				<select class="majoractorvalueselector">
+					<option value="3">Default(3)</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+
+			<div class="conflictselector">
+				<p class="selectorheadings">Conflicts</p>
+				<select class="conflictvalueselector">
+					<option value="1">Default(1)</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
 			
 		</div>
 		<div id='results'>
@@ -63,9 +72,10 @@
 	    //  Runs genCourt when clicked
 		$( "#genCourt" ).click( ()=> {
 			//  Get current type from courtSelector
-			const type =  $('.courtselector').val();
-			const numMajorActors = $('.majoractorselector').val();
-			const numConflicts = $('.conflictselector').val();
+			const type =  $('.courtvalueselector').val();
+			const numMajorActors = $('.majoractorvalueselector').val();
+			const numConflicts = $('.conflictvalueselector').val();
+
 			// Fire genCourt, which will fire renderCourt to add to page.
 			genCourt(type, numMajorActors, numConflicts);
 		});

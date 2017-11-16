@@ -17,7 +17,6 @@ Generates quick results from the various Godbound charts.  Currently this focuse
 ## TODO
 * Write renderConflicts to render a HTML table similar to renderActors.
 * Resolve issue with "they're" and other apostrophes leading to strange characters.
-* Add selection boxes for number of conflicts.
 * Update and organize html for future CSS.
 
 ## Court Generation Steps
