@@ -8,7 +8,7 @@ If you wanna help, cool. Right now I'm focused on getting the functionality work
 3.  Fully test any changes you made, ensuring there are no errors in the console, etc.
 4.  Merge your changes into your master branch.
 5.  Rebase your master branch from my master branch.
-6.  Submit a pull request.
+6.  Submit a pull request from your master branch.
 
 ### Commit and Pull Request Guidelines
 This is a pretty simple project thus far, but it could get fairly large in the future as I add other tools.  So let's keep things neat.

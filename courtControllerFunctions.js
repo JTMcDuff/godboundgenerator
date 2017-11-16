@@ -41,7 +41,8 @@ function genMajorActors(courtType, number) {
   }
 
   return results;
-};
+}
+
 // genMinorActors accepts a court type and a number.  It returns a simple array, as minor actors lack a power source.
 function genMinorActors(courtType, number) {
   let results = [];

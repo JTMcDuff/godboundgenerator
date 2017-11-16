@@ -19,6 +19,7 @@ Generates quick results from the various Godbound charts.  Currently this focuse
 * Resolve issue with "they're" and other apostrophes leading to strange characters.
 * Add selection boxes for number of actors.
 * Add selection boxes for number of conflicts.
+* Update and organize html for future CSS.
 
 ## Court Generation Steps
 1.  Generate Organization Power Structure.  -- Working
