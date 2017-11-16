@@ -75,7 +75,8 @@ function genConflicts( courtType, majorActors, minorActors, numConflicts) {
 		// choose a conflict.
 		conflict = [ courts[ courtType ][ 'Conflicts' ][ genRand(12) ] ];
 
-		if (majLen > 1 ){
+		// Only generate protagonist and antagonist if we have at least two.
+		if (majLen > 1 ) {
 			// choose a protagonist
 			// first find the correct index and assign that value to protag
 			index = genRand( majLen ) - 1;
@@ -93,13 +94,17 @@ function genConflicts( courtType, majorActors, minorActors, numConflicts) {
 
 			// add them both to conflict.
 			conflict.push( protag, antag );
+		}
+		else { // Else we push on N/A for now.  Might expand this later.
+			conflict.push( 'N/A', 'N/A');
+		}
 
-			//Finally, choose a minor actor if we have one available and add to conflict.
-			if ( minLen > 0 ) {
-				minor = minorActors[ genRand(minLen) -1 ];
-				conflict.push(minor);
-			}
-		}	
+		//Finally, choose a minor actor if we have one available and add to conflict.
+		if ( minLen > 0 ) {
+			minor = minorActors[ genRand(minLen) -1 ];
+			conflict.push(minor);
+		}
+
 		// Add to results.
 		results.push(conflict);
 	}
