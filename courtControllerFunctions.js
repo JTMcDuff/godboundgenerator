@@ -25,7 +25,7 @@ function genCourt(type, numMajorActors, numConflicts) {
 		'major actors': majorActors,
 		'minor actors': minorActors,
 		// conflicts will eventually be selectable, so we are setting it up as an array now.
-		'conflicts': [ courts[ courtType ][ 'Conflicts' ][ genRand(12) ] ],
+		'conflicts': conflicts,
 		'defense': courts[ courtType ][ 'Court Defenses'][ genRand(12) ]
 	};
 
