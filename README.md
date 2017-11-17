@@ -15,18 +15,18 @@ Generates quick results from the various Godbound charts.  Currently this focuse
 * jQuery 3.2.1
 
 ## TODO
-* Write renderConflicts to render a HTML table similar to renderActors.
 * Create method to sanitize apostrophes in javascript into &apos for html.
+* Make minor actors selectable.
 * Update and organize html for future CSS.
 
 ## Court Generation Steps
 1.  Generate Organization Power Structure.  -- Working
 2.  Choose or Generate Court type.  -- Working
-3.  Generate at least three major actors.  Working, set to three actors.
-4.  Generate a power structure for each major actor.  -- Working.
-5.  Pick at least one conflict.  -- Need to render conflicts.
-6.  Pick a protagonist and an antagonist for each conflict.
-7.  Generate a few minor actors.  Make this selectable eventually.
+3.  Generate at least three major actors.  -- Working
+4.  Generate a power structure for each major actor.  -- Working
+5.  Pick at least one conflict.  --  Working
+6.  Pick a protagonist and an antagonist for each conflict. -- Working
+7.  Generate a few minor actors.  Make this selectable eventually
 8.  Generate a consequence for its destruction. -- Working.
 9.  Generate at least one defense.  Default to one, eventually make this selectable. -- Working
 
